@@ -1,0 +1,1150 @@
+
+
+@font-face {
+    font-family: Futura;
+    src: local("Futura Bold font.ttf");
+    font-weight: bold;
+}
+
+
+html, body {
+    margin-left: 40px;
+    margin-right:40px;
+    margin-top:25px;
+    padding: 0px;
+    background-color:#FCFCFE;
+    color:#19162D;
+}
+
+img {max-width: 100%;}
+
+* {box-sizing: border-box; }
+
+a:visited, a:link, a:active {
+   text-decoration: none;
+   color:#19162D;
+}
+
+h1, h2, h3, h4, h5, h6, p {margin: 0px;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Futura';}
+
+.main-page-title {
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+
+.main-page-title-fixed {
+    position:fixed;
+    margin-top: 69px;
+    padding-top: 15px;
+    font-size: 18px;
+    transition: 0.2s;
+    background-color:#FCFCFE;
+    width:100%;
+    height: 50px;
+    z-index:1;
+    overflow-x:auto;  
+    white-space: nowrap;
+}
+
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.subtitle, .sessaoiniciada a, .sessaoiniciada h4, .breadcrumbs a {
+    color: #949494;
+}
+
+a, p {text-align: left;}
+
+a:hover {color:#5F45FF;}
+
+
+.breadcrumbs {
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+.margin-top-25 {margin-top: 25px;}
+
+.margin-top-50 {margin-top: 50px;}
+
+.margin-bottom-50 {margin-bottom: 50px;}
+
+.margin-bottom-100 {margin-bottom: 100px;}
+
+.margin-top-100{margin-top:100px;}
+
+.img-responsive{width:100%;}
+
+
+.cookie-box {
+    position: fixed;
+    left: 95px;
+    right: 0;
+    bottom: 15px;
+    height:auto;
+    width:50%;
+    text-align: left;
+    z-index: 9;
+    padding: 1rem 2rem;
+    background: #fff;
+    border:1px solid #19162D;
+    transition: all .75s cubic-bezier(.19,1,.22,1);
+    
+    &--hide {
+      opacity: 0;
+      bottom: -100%;
+    }
+
+  }
+
+  .cookie-button {
+    display: inline-block;
+    cursor: pointer;
+    padding:5px;
+    width:30%;
+  }
+  
+  .aceitar-cookie {
+    color: #fff;
+    background:#5F45FF;
+    border:1px solid #5F45FF;
+    margin-right: 15px;
+  }
+
+  .rejeitar-cookie {
+    color:#19162D;
+    background:#FCFCFE;
+    border:1px solid #19162D;
+  }
+
+  .cookie-box h5, .close-icon {
+   display:inline;
+  }
+
+
+/* ANIMACAO HOMEPAGE TITULO */
+.header-box{
+    margin-bottom:15px;
+    font-size: 50px;
+    position:fixed;
+    top:0;
+    overflow:hidden;
+    transition: height 0.3s;
+}
+
+.disappears{visibility:hidden;}
+/* FIM ANIMACAO HOMEPAGE TITULO */
+
+
+/* NAVBAR E MENUS */
+
+.logo {
+    display:none;
+    width:40px;
+    height:40px;
+    margin-left:-35px;
+    margin-top: 18px;
+    margin-bottom:5px;
+}
+
+.logofixed {
+    width:40px;
+    height:40px;
+    margin-left:-35px;
+    margin-top: 18px;
+    margin-bottom:5px;
+}
+
+.fixed-menu {
+    background-color:#FCFCFE;
+    position:fixed;
+    top: 0;
+    z-index: 1; 
+    height: 70px;
+    width: 1090px;
+    max-width:calc(100% - 190px);
+}
+
+
+.responsive-menu {
+    display:none;
+    position:fixed;
+    right:0;
+    top:0;
+    padding:20px 40px 20px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.menu {
+    list-style-type: none;
+    margin: 0; 
+    background-color: #FCFCFE;
+    border-bottom: 1px solid #19162D;
+    height: 70px;
+    overflow:hidden;
+    z-index: 1;
+    width: 100%;
+}
+
+
+/*NAO ELIMINAR*/
+li {float: left;}
+  
+.navlink {
+    display: block;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color:#19162D;
+}
+
+li a:hover, .responsive-menu:hover, .link:hover {color:#5F45FF;}
+
+.search-icon {
+    margin-top: 8px;
+    margin-bottom:5px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+}
+
+.inputfield {display:none;}
+
+form.search input[type=text] {
+    margin-left: 25px;
+    margin-top: 8px;
+    margin-bottom:5px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    outline: none;
+    background-color:#FCFCFE;
+    caret-color:#5F45FF;
+}
+
+::placeholder{color:#949494;}
+
+/* FIM DA NAVBAR */
+
+
+/* SUBMENUS */
+
+.submenu {
+    list-style-type: none; 
+    background-color:#FCFCFE; 
+    width: 100%;
+}
+
+
+.submenu li h4{
+    margin-top: 50px;
+    margin-right: 50px;
+    font-size:18px;
+}
+
+.submenu a:hover {
+    color:#19162D;
+    text-decoration: 3px solid underline #19162D;
+}
+
+.fixed-submenu li h4:hover{text-decoration: 3px solid underline #19162D;}
+ 
+
+.fixed-submenu {
+    list-style-type: none; 
+    background-color:#FCFCFE;
+    position:fixed;
+    height: 50px;
+    top:70px;
+    left: 30%;
+    width: calc(70% - 35px);
+    z-index:1;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+
+.fixed-submenu li h4  {
+    padding-top: 18px;
+    margin-right: 50px; 
+    margin-top: 0px;
+    font-size:14px;
+    display:inline-block;
+}
+
+.inline {display:inline-block;}
+
+.active-underline  {text-decoration: 3px solid underline #19162D;}
+
+.active {color:#19162D;}
+
+.active-link {color:#5F45FF;}
+
+.none {display:none;}
+
+/* FIM DOS SUBMENUS */
+
+
+/* BANNER FILMES */
+
+.banner {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:40vh;
+}
+
+
+.image-legend{
+    display: block;
+    padding: 20px;
+    color: #19162D;
+    font-weight: bold;
+    position: relative;
+    font-size: 20px;
+    text-align:center;
+    margin-top:80px;
+}
+
+.image-legend:hover {color: #5F45FF;}
+
+.nopadding {
+    margin: 0;
+    padding:0;
+}
+
+.nopadding-right {padding-right: 0;}
+
+.nopadding-left {padding-right:15px;}
+
+
+/* PAGINA DO FILME */
+
+.banner_filme {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 70vh;
+}
+
+.movie-name {
+    transform: translateY( 100%);
+    padding-left: 15px;
+}
+
+.detalhes_filme {
+    background-color:#5F45FF;
+    height:100%;
+    color:#FCFCFE;
+}
+
+.detalhes-header {
+    border-bottom: 1px solid #FCFCFE;
+    padding:15px;
+}
+
+.fichatecnica, .trailer{
+    margin-bottom: 50px;
+}
+
+
+/* A CINEMATECA */
+
+.banner_pagina {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    width:100%;
+    height: 30vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.horario {margin-left: 40px;}
+
+/* TOGGLE ABRIR E FECHAR SEPARADORES */
+
+.separador{
+    border-bottom: 1px solid #19162D;
+    padding-top: 15px;
+    padding-bottom:15px;
+}
+
+.separador h4{cursor: pointer;}
+
+.separador_texto{
+    display:none;
+    margin-top: 25px;
+}
+
+.seta {
+    width:20px;
+    height:20px;
+    margin-top: 15px;
+    float:right;
+	transform: translate(0%, -50%) rotate(0deg);
+	transition: all 200ms ease-in;
+}
+
+.rotate180 {
+    transform: translate(0%, -50%) rotate(180deg);
+	transition: all 200ms ease-in;
+}
+
+
+
+/* FLIP CARD EFFECT */
+
+.flip-card-inner {
+    position:relative;
+    width:25%;
+    height:40vh;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {transform: rotateY(0deg);}
+
+.flip-card-back {transform: rotateY(180deg);}
+
+/* FIM DO FLIP CARD EFFECT */
+
+/* FIM DO BANNER HOMEPAGE */
+
+.politicadeprivacidade-banner {
+    width:100%;
+    height:100%;
+}
+
+/* NOTICIAS */
+
+.noticia-img {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:345px;
+}
+
+.vermais {
+    width:50%;
+    height:40px;
+    background-color:#FCFCFE;
+    color:#19162D;
+    border: 1px solid #19162D;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.vermais:hover{
+    background-color:#5F45FF;
+    color:#FCFCFE;
+    border: 1px solid #5F45FF;
+}
+
+
+.img-noticias {
+    width:100%;
+    padding:5px;
+    height:30vh;
+}
+.noticia_texto {
+    padding-left:15px;
+}
+
+/* FIM DAS NOTICIAS */
+
+
+
+/* TIMELINE */
+
+.timeline-slider {margin-top:25px;}
+
+.timeline-slider .slide {color:#949494;}
+
+.slick-current.slide{
+    font-weight: bold;
+    color:#19162D;
+}
+
+.event_text {font-size:14px;}
+
+.event_text .slick-slide {
+    display:inline;
+}
+
+.event-slider {
+    width:100% !important;
+}
+ 
+
+.progress_timeline {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    display: block;
+    width: 100% !important;
+    height: 3px;
+    overflow: hidden;
+    
+    background:#949494;
+    background-image:linear-gradient(to right, #19162D, #19162D);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+
+    transition: background-size .4s ease-in-out;
+}
+
+[aria-valuenow="0"] {background-size: 4% 100% !important;}
+
+
+
+/* PROGRAMACAO */
+
+.img-programacao {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:30vh;
+}
+
+
+.banner-principal, .img-404 {
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;
+}
+
+
+.filtrar, .diasdasemana{cursor:pointer;}
+
+.filtrar { display: flex;}
+
+.diasdasemana, .text-block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info-filme {
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+
+.inline-block{
+     display:inline-block;
+     padding-right: 30px;
+}
+
+/* overlay titulo do filme por cima da imagem */
+.content-box {
+    position:relative;
+    width:100%;
+} 
+
+.content-box:hover .content-overlay {
+    opacity:1;
+    background: rgba(0,0,0,0.5);
+    position:absolute;
+    width:100%;
+    height:30vh;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.content-box:hover .content-overlay h5 {
+    visibility:visible;
+}
+
+.content-overlay h5 {
+    visibility:hidden;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    left:15%;
+    right:15%;
+}
+
+
+
+/* FIM DA PROGRAMACAO */
+
+
+/* CICLOS */
+
+.imagem-ciclo {
+    width:100%;
+    height:auto;
+}
+
+.slider_ciclos .slick-slide {padding-right: 5px;}
+
+.slider_ciclos .slide .slide-title {color:#19162D;}
+
+.prev-next-ciclos {
+    display:none;
+    width:50%;
+    height:40px;
+    background-color:#FCFCFE;
+    border: 1px solid #19162D;
+    color:#19162D;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    float:left;
+}
+
+/* FIM DOS CICLOS */ 
+
+/* EXPOSICOES */
+
+.slider_expo .slide .slide-title {color:#19162D;}
+
+.slider_expo .slide:first-child, .slider_col .slide:first-child {padding-right: 15px;}
+
+.slider_expo .slick-slide .slide, .slider_col .slick-slide:nth-child(2) {padding-right: 0px;}
+
+
+.imagens-expo-permanente .slick-slide{
+ height: 10vh;
+ width:100px;
+}
+
+
+/* FIM EXPOSICOES */
+
+/* BOTAO PREV-NEXT */
+
+.prev-next {
+    display:none;
+    width:50%;
+    height:40px;
+    background-color:#FCFCFE;
+    border: 1px solid #19162D;
+    color:#19162D;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    float:left;
+}
+
+.arrow {
+    width:25px;
+    height:25px;
+}
+
+.prev, .prev-col, .prev-ciclos {
+    text-align: left;
+    border-right: none;
+}
+
+.next, .next-col, .next-ciclos {
+    text-align: right;
+    border-left: none;
+}
+/* FIM DO BOTAO PREV-NEXT */
+
+
+/* COLECCOES E ARQUIVOS */
+
+.costa-do-castelo {
+    float:right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.slider-galeria1 div.slick-track {
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+.slider-galeria3 .slide {margin-right: 15px;}
+
+.float-right, .box-right{float:right;}
+
+
+.slider_col .slide .slide-title {color:#19162D;}
+
+
+/* FIM DAS COLECCOES E ARQUIVOS */
+
+
+/* CINEMATECA JUNIOR */
+
+.img-cinematecajunior{
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:60vh;
+}
+
+
+.familia-banner {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    width:100%;
+    height: 40vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.escolasgrupos-banner {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    width:100%;
+    height: 40vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.galeria-cinematecajunior .slide {margin-right: 15px;}
+
+
+.prog-cinematecajunior {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:30vh;
+}
+
+
+.slider_oficinas .slide{margin-right: 20px;}
+
+/* FIM DA CINEMATECA JUNIOR */
+
+
+/* FOOTER */
+
+footer, .footer-plus{
+    border-top: 1px solid #19162D;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+iframe {padding-bottom: 5px;}
+
+.socialmedia {display:inline;}
+
+.socialmedia-icon{
+    width:25px;
+    height:25px;
+    margin-right: 15px;
+}
+
+iframe {filter: grayscale(1);}
+
+
+.aviso_404 {margin-top:40%;}
+/* FIM DO FOOTER */
+
+
+
+/* MEDIA QUERIES */
+
+/* 4K */
+@media only screen and (max-width: 4000px){
+    
+    .submenu li h4{margin-top: 50px;}
+
+    .fixed-submenu li h4 {
+        margin-top: 0px;
+        font-size:14px;
+    }
+
+
+}
+
+
+
+/*HD READY*/
+@media only screen and (max-width: 1440px){
+
+    .submenu li h4{margin-top: 50px;}
+
+    .fixed-submenu li h4 {
+        margin-top: 0px;
+        font-size:14px;
+    }
+
+    /*.diasdasemana, .info-filme,*/ .submenu {
+        overflow-x: auto;
+        white-space: nowrap;
+        min-width: 100%;
+    }
+
+    
+    .fixed-submenu {
+        left:30%;
+        width: calc(70% - 35px);
+        min-width: auto;
+    }
+
+}
+
+
+/*HD MAC13*/
+@media only screen and (max-width: 1280px){
+
+    iframe {
+        width:100%;
+        height:auto;
+    }
+
+    .morada-map {padding-right:30px;}
+
+    .submenu li h4{margin-top: 50px;}
+
+    .fixed-submenu li h4 {
+        margin-top: 0px;
+        font-size:14px;
+    }
+
+    .diasdasemana, .info-filme, .submenu{
+        overflow-x: auto;
+        white-space: nowrap;
+        min-width: 100%;
+    }
+
+    .fixed-submenu {
+        left:40%;
+        width: calc(60% - 35px);
+        min-width: auto;
+    }
+
+}
+
+/*tablet landscape or old laptop */
+@media only screen and (max-width: 1024px){
+
+    html,body {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .fixed-menu {
+        width: 894px;
+        max-width:calc(100% - 130px);
+    }
+
+    .logo, .logofixed {
+        position: fixed;
+        left: 100px;
+    }
+
+    .header-box, h1{
+        margin-top:15px;
+        font-size:30px;
+    }
+
+    .responsive-menu {
+        display:block;
+        padding-right: 70px;
+        cursor:pointer;
+    }
+
+
+    .menu li, .search-icon {float:none;}
+
+    .inputfield {
+      position:absolute;
+      left: 25px;  
+    }
+
+    .menu.mobile {
+        padding-left: 0px;
+        min-height: 100vh;
+        z-index: 999;
+    }
+    
+   .navlink {
+        text-align:left;
+        padding-left: 0px;
+    }
+
+    .menu li:nth-child(2) {margin-top: 60px;}
+
+    .flip-card-inner {width:100%;}
+
+    .banner-principal {background-position: right center;}
+
+    .morada, .socios {margin-top: 35px;}
+
+    .fixed-submenu li:nth-child(2) {margin-top: 0px;}
+
+    .fixed-submenu li h4 {
+        margin-top: 0px;
+        font-size:14px;
+    }
+
+    .diasdasemana, .info-filme, .submenu{
+        overflow-x: auto;
+        white-space: nowrap;
+        min-width: 100%;
+    }
+
+    
+    .fixed-submenu {
+        left:30%;
+        width: calc(70% - 35px);
+        min-width: auto;
+    }
+ 
+}
+
+@media only screen and (max-width: 991px){
+
+    .noticias-header, .text-space{margin-top: 25px;}
+
+    .banner-principal {background-position: right center;}
+
+    .prev-next-ciclos {display:block;}
+
+    .morada-map  {padding-right:0px;}
+
+    .margin-top-100 {margin-top: 50px;}
+    
+    .margin-bottom-50 {margin-bottom: 50px;}
+
+    .margin-bottom-25  {margin-bottom: 25px;}
+
+    .margin-top-50 {margin-top: 50px;}
+
+    .costa-do-castelo, .float-right {
+        float:none;
+        width:100%;
+    }
+
+    .vermais, .img-responsive {width:100%;}
+
+    .prev-next{display:block;}
+
+    .bilheteira, .info-marcacoes {margin-top: 35px;}
+
+    .slider_expo .slide:first-child, .slider_col .slide:first-child {padding-right: 0px;}
+
+    
+    .fixed-submenu {
+        left:40%;
+        width: calc(60% - 35px);
+        min-width: auto;
+    }
+
+    .noticia_texto {
+        margin: 0;
+        padding:0;
+    }
+
+    .nopadding-right {padding-left: 0 !important;}
+
+
+}
+
+
+
+/* Size considerado para Tablet modo portrait -- 768px 
+daqui para baixo serao aplicadas as regras*/
+@media only screen and (max-width: 768px){
+
+    html, body {
+        margin-left: 10px;
+        margin-right:10px;
+    }
+
+    .fixed-menu {
+        width: 100%;
+        background-color:#FCFCFE;
+        max-width:calc(100% - 70px);
+    }
+
+    .logo, .logofixed {
+        position: fixed;
+        left: 70px;
+    }
+
+    .header-box, h1 {font-size:25px;}
+
+    .responsive-menu {padding-right: 40px;}
+
+    .banner-principal {
+        background-position: right center;
+    }
+
+    .morada {
+        margin-top: 35px;
+        padding-bottom:15px;
+    }
+
+
+    .inline-block{
+        display:inline-block;
+        padding-right: 50px;
+   }
+   
+
+    .fixed-submenu li:first-child {margin-left: 50px; }
+
+    .margin-top-100 {margin-top: 50px;}
+    
+    .imagens-expo-permanente .slick-slide{width: 100%;}
+
+    .h4 {font-size:15px;}
+
+    .fixed-submenu li h4  {margin-right: 0px;}
+
+    /*.fixed-submenu {
+        left:30%;
+        width: calc(70% - 35px);
+        min-width: auto;
+    }*/
+
+
+}
+
+@media only screen and (max-width: 580px){
+
+    .fixed-submenu {
+    left: 50%;
+    width: calc(50% - 35px);
+    min-width:auto;
+    }
+}
+
+
+@media only screen and (max-width: 480px){
+  
+
+    .main-page-title {font-size: 25px;}
+
+    .main-page-title-fixed {font-size: 18px;}
+
+    .fixed-submenu {
+        left: 60%;
+        width: calc(40% - 35px);
+        min-width: auto;
+    
+    }
+
+    .cookie-button { width:40%;}
+
+}
+
+
+/*Size considerado Mobile - 430px */
+@media only screen and (max-width: 430px){
+  
+    html, body {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .fixed-menu {
+        width: 375px;
+        max-width:calc(100% - 50px);
+    }
+
+    .logo,  .logofixed {
+        position: fixed;
+        left: 60px;
+    }
+
+    .header-box, h1{font-size:20px;}
+
+    .responsive-menu {padding-right: 30px;}
+    
+    .vermais{width:100%;}
+
+    h2 {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    h3 { font-size: 17px; }
+
+    h4 {font-size: 15px;}
+
+    .fixed-submenu {
+        left: 65%;
+        width: calc(35% - 35px);
+        min-width: auto;
+    }  
+
+}
+
+
+/*ismartphones plus  */
+@media only screen and (max-width: 414px){
+
+    .fixed-submenu {
+        left: 50%;
+        width: calc(50% - 35px);
+        min-width: auto;
+    }
+
+    .cookie-button { width:40%;}
+    .cookie-box {width: 60%;}
+
+}
+
+
+
+/* smartphones normais  */
+@media only screen and (max-width: 378px){
+
+    .fixed-submenu {
+        left: 60%;
+        width: calc(40% - 35px);
+        min-width: auto;
+    }
+}
+
+
+
+/* iphone 5 <=  */
+@media only screen and (max-width: 320px){
+
+    .header-box, h1, .main-page-title{font-size:20px;}
+
+    .diasdasemana {padding: 15px;}
+
+    .fixed-submenu {
+        left: 60%;
+        width: calc(40% - 35px);
+        min-width: auto;
+    }
+
+    .cookie-button { width:40%;}
+    .cookie-box {width: 60%;}
+}
+
+
+
+
+
+
